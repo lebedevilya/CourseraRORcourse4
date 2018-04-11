@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
 	font-family: Roboto, Arial;
 }
@@ -7,6 +13,43 @@ h1 {
 }
 .block {
 	float: left;
-	border: 2px solid black;
+	border: 1px solid black;
 	margin: 10px;
+	background-color: HoneyDew;
+}
+
+.title {
+	float: right;
+	border: 1px solid black;
+	padding: 5px 20px 5px 20px;
+	margin: -1px -1px 0 0;
+}
+
+.content {
+	clear: right;
+}
+
+@media (min-width: 992px) {
+	.block {
+		width: 30%;
+	}
+}
+
+@media (max-width: 767px) {
+	.block {
+		background-color: black;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.block1, .block2 {
+		width: 47%;
+	}
+	.block2 {
+		float: right;
+	}
+	.block3 {
+		width: auto;
+		clear: both;
+	}
 }
