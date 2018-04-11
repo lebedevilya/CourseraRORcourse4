@@ -10,34 +10,54 @@ body {
 
 h1 {
 	text-align: center;
+	margin-top: 20px;
 }
 .block {
 	float: left;
 	border: 1px solid black;
-	margin: 10px;
+	margin-right: 1%;
+	margin-top: 30px;
 	background-color: HoneyDew;
+}
+
+.block1 {
+	margin-left: 1%;
 }
 
 .title {
 	float: right;
 	border: 1px solid black;
 	padding: 5px 20px 5px 20px;
-	margin: -1px -1px 0 0;
+	margin: -1px -1px 5px 0;
+}
+
+.title1 {
+	background-color: LemonChiffon;
+}
+
+.title2 {
+	background-color: WhiteSmoke;
+}
+
+.title3 {
+	background-color: MistyRose;
 }
 
 .content {
 	clear: right;
+	margin: 15px;
+	margin-bottom: 5px;
 }
 
 @media (min-width: 992px) {
 	.block {
-		width: 30%;
+		width: 32%;
 	}
 }
 
 @media (max-width: 767px) {
 	.block {
-		background-color: black;
+		width: auto;
 	}
 }
 
